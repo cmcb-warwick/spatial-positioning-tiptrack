@@ -1,0 +1,9 @@
+Here we provide MATLAB scripts for the analysis of the relative spatial positioning of EB comets in cells and in vitro as used for Roth et al., J Cell Science 2018. 
+
+LineScans.m is used to superaverage multi-colour linescan data as can be obtained from fixed cell imaging stained with different antibodies for tip tracker proteins - in our case EB1, EB2 and EB3. Data from different cells and experiments are averaged by using the half-maximal intensity of both EB1 and EB3 peak as reference. The data are provided as textfile outputs from the ImageJ "Plot Profile" function. 
+
+PairedNucleotides.m is used to simulate the distribution of GTP, GDP/Pi and GDP as a function of distance from the microtubule end and calculate the distribution of pairs of nucleotides. The script outputs an eps file with plots for three different parameter settings, which can easily be modified in the source code. 
+
+DualColourKymograph_Analysis.zip contains a group of functions to superaverage intensity distributions from dual colour experiments with sequential imaging. The input are kymographs of the red and green channel movies. In the first step, continuous growth phases are selected using the MATLAB-ImageJ interface in the red channel. Then, the temporal shift is corrected and averaged intensity data obtained for each growth phase before superaveraging data and calculating peak difference distributions. 
+
+These are Matlab functions that have been tested to run on MATLAB_R2012b. Please see description in the MATLAB function itself and the original publications for more detail: Roth et al. (2018) Journal Cell Science.
